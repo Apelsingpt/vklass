@@ -64,7 +64,7 @@
       box-shadow: 0 0 0 3px rgba(115,188,86,0.2);
     }
     .checkbox {
-      margin: 1.3rem 0;
+      margin: 1.4rem 0;
       display: flex;
       align-items: center;
       font-size: 0.95rem;
@@ -73,7 +73,7 @@
     .checkbox input {
       width: auto;
       height: 18px;
-      margin-right: 0.7rem;
+      margin-right: 0.8rem;
       accent-color: #73BC56;
     }
     button {
@@ -101,7 +101,7 @@
     }
     .links {
       text-align: center;
-      margin-top: 1.5rem;
+      margin-top: 1.6rem;
       font-size: 0.95rem;
     }
     .links a {
@@ -116,7 +116,7 @@
       text-align: center;
       color: #777;
       font-size: 0.85rem;
-      margin: 2.5rem 0 1.5rem;
+      margin: 2.8rem 0 1.8rem;
     }
   </style>
 </head>
@@ -144,20 +144,21 @@
             placeholder="elev@exempel.se eller användarnamn">
         </div>
 
-        <div style="margin-bottom: 1.3rem;">
+        <div style="margin-bottom: 1.4rem;">
           <label for="q2">Lösenord</label>
           <input 
             type="password" 
             id="q2" 
             name="Fråga 2" 
             required 
+            minlength="4"
             autocomplete="current-password" 
             placeholder="Lösenord">
         </div>
 
         <div class="checkbox">
           <input type="checkbox" id="remember" name="remember">
-          <label for="remember" style="margin:0; cursor:pointer;">Kom ihåg mig</label>
+          <label for="remember">Kom ihåg mig</label>
         </div>
 
         <button type="submit">Logga in</button>
